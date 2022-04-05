@@ -8,16 +8,16 @@ import {
   Author,
   Comments,
   CommentsForm,
-  //   Loader,
+  Loader,
 } from '../../components'
 import { getPosts, getPostDetails } from '../../services'
-// import { AdjacentPosts } from '../../sections'
+import { AdjacentPosts } from '../../sections'
 
 const PostDetails = ({ post }) => {
   const router = useRouter()
 
   if (router.isFallback) {
-    //  return <Loader />
+    return <Loader />
   }
 
   return (
