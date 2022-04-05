@@ -6,7 +6,7 @@ import {
   Categories,
   PostWidget,
   Author,
-  // Comments,
+  Comments,
   CommentsForm,
   //   Loader,
 } from '../components'
@@ -30,7 +30,7 @@ const PostDetails = ({ post }) => {
 
             {/* <AdjacentPosts slug={post.slug} createdAt={post.createdAt} /> */}
             <CommentsForm slug={post.slug} />
-            {/* <Comments slug={post.slug} /> */}
+            <Comments slug={post.slug} />
           </div>
           <div className="col-span-1 lg:col-span-4">
             <div className="relative top-8 lg:sticky">
